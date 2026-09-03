@@ -8,75 +8,56 @@
  -->
 <template>
   <div class="landing-page">
-    <!-- HERO -->
-    <section class="hero-section">
-      <h1>Beli produk sesuai isi dompet mu</h1>
-      <p>Platform sederhana untuk membeli CH, memberikan rekomendasi barang yang sesuai budgetmu.</p>
-      <RouterLink to="/product" class="btn-primary">Lihat Produk</RouterLink>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1 class="hero-title">Belanja Lebih Cerdas, Hidup Lebih Mudah</h1>
+      <p class="hero-subtitle">
+        Temukan produk pilihan terbaik dengan harga terjangkau, langsung dari satu platform.
+      </p>
+      <RouterLink to="/product" class="hero-button">
+        Lihat Produk
+      </RouterLink>
     </section>
 
-    <!-- FITUR -->
+    <!-- FEATURE SECTION -->
     <section class="features">
-      <FeatureCard
-        v-for="feature in features"
-        :key="feature.title"
-        :icon="feature.icon"
-        :title="feature.title"
-        :description="feature.desc"
-      />
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3 class="feature-title">Cepat & Praktis</h3>
+        <p class="feature-desc">
+          Proses pemesanan cepat tanpa ribet, cukup beberapa klik saja.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3 class="feature-title">Aman & Terpercaya</h3>
+        <p class="feature-desc">
+          Transaksi terjamin keamanannya dengan sistem pembayaran terverifikasi.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3 class="feature-title">Dukungan 24/7</h3>
+        <p class="feature-desc">
+          Tim support siap membantu kapan pun kamu butuh bantuan.
+        </p>
+      </div>
     </section>
   </div>
 </template>
+
 <script setup>
-import FeatureCard from '@/components/FeatureCard.vue'
-
-const features = [
-  {
-    icon: '🛒',
-    title: 'Belanja Mudah',
-    desc: 'Temukan berbagai produk sekolah dengan mudah dan cepat.'
-  },
-  {
-    icon: '🚚',
-    title: 'Pengiriman Cepat',
-    desc: 'Dapatkan pesananmu dalam waktu singkat dengan layanan pengiriman kami.'
-  },
-  {
-    icon: '💳',
-    title: 'Pembayaran Aman',
-    desc: 'Nikmati pengalaman belanja yang aman dengan berbagai metode pembayaran.'
-  }
-]
-
-
- <script setup>
-import FeatureCard from '@/components/FeatureCard.vue'
-
-const features = [
-  {
-    id: 1,
-    icon: '🛒',
-    title: 'Belanja Mudah',
-    desc: 'Temukan berbagai produk sekolah dengan mudah dan cepat.'
-  },
-  {
-    id: 2,
-    icon: '🚚',
-    title: 'Pengiriman Cepat',
-    desc: 'Dapatkan pesananmu dalam waktu singkat dengan layanan pengiriman kami.'
-  },
-  {
-    id: 3,
-    icon: '💳',
-    title: 'Pembayaran Aman',
-    desc: 'Nikmati pengalaman belanja yang aman dengan berbagai metode pembayaran.'
-  }
-]
+// Halaman ini murni presentational, belum butuh logic tambahan.
+// Import RouterLink otomatis tersedia lewat komponen global Vue Router,
+// jadi tidak perlu diimpor manual di sini.
 </script>
+
 <style scoped>
 .landing-page {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #2c2c57;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f1f2e;
 }
 
 /* ===== HERO ===== */
@@ -85,7 +66,7 @@ const features = [
   color: #ffffff;
   padding: 100px 24px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -101,20 +82,19 @@ const features = [
   opacity: 0.9;
 }
 
-.btn-primary {
+.hero-button {
   display: inline-block;
   background: #ffffff;
-  color: #e70b3b;
+  color: #db1821;
   text-decoration: none;
-  font-weight:bold;
-  padding: 10px 24px;
+  font-weight: 600;
+  padding: 14px 36px;
   border-radius: 999px;
-  box-shadow: 0 7px 17px rgba(0, 0, 0, 0.2);
-  transition:transform 0.2s ease,
-   
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-primary:hover {
+.hero-button:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
 }
@@ -136,9 +116,7 @@ const features = [
   padding: 32px 24px;
   width: 280px;
   text-align: center;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .feature-card:hover {
@@ -162,13 +140,4 @@ const features = [
   color: #555566;
   line-height: 1.5;
 }
-
-video {
-  margin-top: 40px;
-  border-radius: 10px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-</style> 
+</style>
