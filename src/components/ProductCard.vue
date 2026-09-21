@@ -95,6 +95,7 @@ button {
  background: #252525;
  color: white;
  cursor: pointer;
+ box-shadow: #252525;
 }
 button:hover { background: #ff0000; }
 .card{

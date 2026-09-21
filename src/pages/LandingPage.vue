@@ -10,17 +10,52 @@
   <div class="landing-page">
     <!-- HERO SECTION -->
     <section class="hero">
-      <h1 class="hero-title">Belanja Lebih Cerdas, Hidup Lebih Mudah</h1>
+      <h1 class="hero-title">𝔅𝔢𝔩𝔞𝔫𝔧𝔞𝔩𝔞𝔠 𝔰𝔢𝔰𝔲𝔞𝔦 𝔦𝔰𝔦 𝔡𝔬𝔪𝔭𝔢𝔱𝔪𝔲, 𝔧𝔞𝔫𝔤𝔞𝔫 𝔱𝔦𝔫𝔤𝔤𝔦𝔨𝔞𝔫 𝔢𝔤𝔬𝔪𝔲. </h1>
       <p class="hero-subtitle">
-        Temukan produk pilihan terbaik dengan harga terjangkau, langsung dari satu platform.
+   𝔇𝔞𝔯𝔦 𝔰𝔦𝔩𝔳𝔢𝔯 𝔧𝔢𝔴𝔢𝔩𝔯𝔶, 𝔢𝔶𝔢𝔴𝔢𝔞𝔯, 𝔞𝔭𝔭𝔞𝔯𝔢𝔩, 𝔩𝔢𝔞𝔱𝔠𝔢𝔯 𝔤𝔬𝔬𝔡𝔰, 𝔠𝔦𝔫𝔤𝔤𝔞 𝔠𝔬𝔪𝔢 
+   𝔞𝔠𝔠𝔢𝔰𝔰𝔬𝔯𝔦𝔢𝔰—𝔱𝔢𝔪𝔲𝔭𝔞𝔫 𝔰𝔢𝔩𝔲𝔯𝔲𝔠 𝔢𝔨𝔬𝔰𝔦𝔰𝔱𝔢𝔪 ℭ𝔠𝔯𝔬𝔪𝔢 ℌ𝔢𝔞𝔯𝔱𝔰 𝔡𝔦 𝔰𝔞𝔱𝔲 𝔱𝔢𝔪𝔭𝔞𝔱. 
+   𝔉𝔢𝔫𝔤𝔨𝔞𝔭, 𝔩𝔞𝔫𝔤𝔨𝔞, 𝔡𝔞𝔫 100% 𝔞𝔲𝔱𝔠𝔢𝔫𝔱𝔦𝔠.
       </p>
       <RouterLink to="/product" class="hero-button">
         Lihat Produk
       </RouterLink>
     </section>
 
-    <!-- FEATURE SECTION -->
     <section class="features">
+      <div
+      v-for="feature in features"
+      :key="feature.title"
+      class="feature-card"
+    >
+      <div class="feature-icon">{{ feature.icon }}</div>
+
+      <h3 class="feature-title">
+        {{ feature.title }}
+      </h3>
+
+      <p class="feature-desc">
+        {{ feature.desc }}
+      </p>
+    </div>
+    <FeatureSection
+  :features="[
+    {
+      icon: '🚀',
+      title: 'Cepat & Praktis',
+      desc: 'Proses pemesanan cepat tanpa ribet, cukup beberapa klik saja.'
+    },
+    {
+      icon: '🔒',
+      title: 'Aman & Terpercaya',
+      desc: 'Transaksi terjamin keamanannya dengan sistem pembayaran terverifikasi.'
+    },
+    {
+      icon: '💬',
+      title: 'Dukungan 24/7',
+      desc: 'Tim support siap membantu kapan pun kamu butuh bantuan.'
+    }
+  ]"
+/>
       <div class="feature-card">
         <div class="feature-icon">🚀</div>
         <h3 class="feature-title">Cepat & Praktis</h3>
@@ -49,12 +84,10 @@
 </template>
 
 <script setup>
-// Halaman ini murni presentational, belum butuh logic tambahan.
-// Import RouterLink otomatis tersedia lewat komponen global Vue Router,
-// jadi tidak perlu diimpor manual di sini.
+import FeatureCard from '@/components/FeatureCard.vue';
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .landing-page {
   font-family: "Segoe UI", Arial, sans-serif;
   color: #1f1f2e;
@@ -62,11 +95,12 @@
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, #000000 0%, #3a04df17 60%, #d30000fd 100%);
+  background: linear-gradient(135deg, #000000 0%, hsla(0, 1%, 25%, 0.582) 60%, #ec0101fd 100%);
   color: #ffffff;
   padding: 100px 24px;
   text-align: center;
   border-radius: 30px;
+  justify-content: center;
 }
 
 .hero-title {
@@ -140,4 +174,4 @@
   color: #555566;
   line-height: 1.5;
 }
-</style>
+</style> -->
