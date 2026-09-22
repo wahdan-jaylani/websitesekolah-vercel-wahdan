@@ -19,14 +19,14 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 10px 20px;
-    color: #dc2626;
+    color: #c90202;
     background-color: transparent;
     font-weight: bold;
 } 
 .navbar a.router-link-active,
 .navbar a.router-link-exact-active {
 background-color: transparent;
-color:#dc2626;
+color:#c90202;
 font-weight: bold;
 }
 </style>

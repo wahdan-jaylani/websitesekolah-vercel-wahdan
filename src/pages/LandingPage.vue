@@ -7,7 +7,10 @@
 <!-- 
  -->
 <template>
-  <div class="landing-page">
+  <div class="font-sans bg-red-700 bg-linear-to-bl from-black-600 to-red-1000
+      bg-gray-50 px-8 text-center rounded-xl flex justify-center text-xl font-semibold 
+      scroll-margin-bottom: 16px text-2xl max-w-1000 m-auto
+       opacity-[<0.9>] inline-blok bg bg-red-50">
     <!-- HERO SECTION -->
     <section class="hero">
       <h1 class="hero-title">𝔅𝔢𝔩𝔞𝔫𝔧𝔞𝔩𝔞𝔠 𝔰𝔢𝔰𝔲𝔞𝔦 𝔦𝔰𝔦 𝔡𝔬𝔪𝔭𝔢𝔱𝔪𝔲, 𝔧𝔞𝔫𝔤𝔞𝔫 𝔱𝔦𝔫𝔤𝔤𝔦𝔨𝔞𝔫 𝔢𝔤𝔬𝔪𝔲. </h1>
@@ -20,7 +23,7 @@
         Lihat Produk
       </RouterLink>
     </section>
-
+  </div>
     <section class="features">
       <div
       v-for="feature in features"
@@ -36,7 +39,9 @@
       <p class="feature-desc">
         {{ feature.desc }}
       </p>
+
     </div>
+  </section>
     <FeatureSection
   :features="[
     {
@@ -56,31 +61,7 @@
     }
   ]"
 />
-      <div class="feature-card">
-        <div class="feature-icon">🚀</div>
-        <h3 class="feature-title">Cepat & Praktis</h3>
-        <p class="feature-desc">
-          Proses pemesanan cepat tanpa ribet, cukup beberapa klik saja.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">🔒</div>
-        <h3 class="feature-title">Aman & Terpercaya</h3>
-        <p class="feature-desc">
-          Transaksi terjamin keamanannya dengan sistem pembayaran terverifikasi.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">💬</div>
-        <h3 class="feature-title">Dukungan 24/7</h3>
-        <p class="feature-desc">
-          Tim support siap membantu kapan pun kamu butuh bantuan.
-        </p>
-      </div>
-    </section>
-  </div>
+    
 </template>
 
 <script setup>
@@ -90,7 +71,7 @@ import FeatureCard from '@/components/FeatureCard.vue';
 <!-- <style scoped>
 .landing-page {
   font-family: "Segoe UI", Arial, sans-serif;
-  color: #1f1f2e;
+  color:  color: #1f1f2e;;
 }
 
 /* ===== HERO ===== */

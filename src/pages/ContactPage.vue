@@ -38,7 +38,8 @@
           <span class="ikon">✉️</span>
           <div>
             <strong>Email</strong>
-            <p>halo@tokokami.id</p>
+            <p>jaymieuup@gmai.com
+            </p>
           </div>
         </div>
 
@@ -79,7 +80,7 @@
 }
 
 .banner {
-  background-color: #e70b3b;
+  background-color: #c90202;
   color: #fff;
   text-align: center;
   padding: 4rem 1rem;
@@ -104,7 +105,7 @@
 }
 
 .deskripsi {
-  color: #666;
+  color: #000000;
   margin-bottom: 1.5rem;
 }
 
@@ -171,7 +172,7 @@
 
 .form-kontak button {
   margin-top: 1.5rem;
-  background:  #474747;
+  background: #c90202;
   color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -184,7 +185,7 @@
 }
 
 .form-kontak button:hover {
-  background: #e70b3b;
+  background: #000000;
   transform: translateY(-1px);
 }
 </style> -->

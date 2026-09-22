@@ -63,7 +63,7 @@ const daftarTim = [
 }
 
 .banner {
-  background-color: #e70b3b; /* SESUAIKAN dengan warna Landing Page kalian */
+  background-color: #c90202; /* SESUAIKAN dengan warna Landing Page kalian */
   color: #fff;
   text-align: center;
   padding: 4rem 1rem;
