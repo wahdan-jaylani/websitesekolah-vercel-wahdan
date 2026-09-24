@@ -7,19 +7,19 @@
 <!-- 
  -->
 <template>
-  <div class="font-sans bg-red-700 bg-linear-to-bl from-black-600 to-red-1000
-      bg-gray-50 px-8 text-center rounded-xl flex justify-center text-xl font-semibold 
-      scroll-margin-bottom: 16px text-2xl max-w-1000 m-auto
-       opacity-[<0.9>] inline-blok bg bg-red-50">
+  <div class="font-sans bg-olive-950">
     <!-- HERO SECTION -->
-    <section class="hero">
-      <h1 class="hero-title">𝔅𝔢𝔩𝔞𝔫𝔧𝔞𝔩𝔞𝔠 𝔰𝔢𝔰𝔲𝔞𝔦 𝔦𝔰𝔦 𝔡𝔬𝔪𝔭𝔢𝔱𝔪𝔲, 𝔧𝔞𝔫𝔤𝔞𝔫 𝔱𝔦𝔫𝔤𝔤𝔦𝔨𝔞𝔫 𝔢𝔤𝔬𝔪𝔲. </h1>
-      <p class="hero-subtitle">
+    <section class="bg-linear-to-r from-red-700 via-black-500 to-orange-500
+    bg-blue-50 px-2 py-10 text-center text-white rounded-xl justify-center">
+
+      <h1 class="text-2xl font-extrabold ">𝔅𝔢𝔩𝔞𝔫𝔧𝔞𝔩𝔞𝔠 𝔰𝔢𝔰𝔲𝔞𝔦 𝔦𝔰𝔦 𝔡𝔬𝔪𝔭𝔢𝔱𝔪𝔲, 𝔧𝔞𝔫𝔤𝔞𝔫 𝔱𝔦𝔫𝔤𝔤𝔦𝔨𝔞𝔫 𝔢𝔤𝔬𝔪𝔲. </h1>
+      <p class="text-xl">
    𝔇𝔞𝔯𝔦 𝔰𝔦𝔩𝔳𝔢𝔯 𝔧𝔢𝔴𝔢𝔩𝔯𝔶, 𝔢𝔶𝔢𝔴𝔢𝔞𝔯, 𝔞𝔭𝔭𝔞𝔯𝔢𝔩, 𝔩𝔢𝔞𝔱𝔠𝔢𝔯 𝔤𝔬𝔬𝔡𝔰, 𝔠𝔦𝔫𝔤𝔤𝔞 𝔠𝔬𝔪𝔢 
    𝔞𝔠𝔠𝔢𝔰𝔰𝔬𝔯𝔦𝔢𝔰—𝔱𝔢𝔪𝔲𝔭𝔞𝔫 𝔰𝔢𝔩𝔲𝔯𝔲𝔠 𝔢𝔨𝔬𝔰𝔦𝔰𝔱𝔢𝔪 ℭ𝔠𝔯𝔬𝔪𝔢 ℌ𝔢𝔞𝔯𝔱𝔰 𝔡𝔦 𝔰𝔞𝔱𝔲 𝔱𝔢𝔪𝔭𝔞𝔱. 
    𝔉𝔢𝔫𝔤𝔨𝔞𝔭, 𝔩𝔞𝔫𝔤𝔨𝔞, 𝔡𝔞𝔫 100% 𝔞𝔲𝔱𝔠𝔢𝔫𝔱𝔦𝔠.
       </p>
-      <RouterLink to="/product" class="hero-button">
+      <RouterLink to="/product" class="inlane-block bg-white
+          decoration-2 font-semibold p-[<1436>] rounded-full shadow-xl/30 ">
         Lihat Produk
       </RouterLink>
     </section>
@@ -71,7 +71,7 @@ import FeatureCard from '@/components/FeatureCard.vue';
 <!-- <style scoped>
 .landing-page {
   font-family: "Segoe UI", Arial, sans-serif;
-  color:  color: #1f1f2e;;
+  color: #1f1f2e;
 }
 
 /* ===== HERO ===== */
@@ -100,7 +100,7 @@ import FeatureCard from '@/components/FeatureCard.vue';
 .hero-button {
   display: inline-block;
   background: #ffffff;
-  color: #db1821;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   padding: 14px 36px;
